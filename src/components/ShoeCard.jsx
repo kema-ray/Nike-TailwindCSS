@@ -1,4 +1,3 @@
-import React from 'react'
 
 const ShoeCard = ({imgURL, changeBigShoeImage, bigShoeImg}) => {
 
@@ -6,15 +5,13 @@ const ShoeCard = ({imgURL, changeBigShoeImage, bigShoeImg}) => {
         if(bigShoeImg !== imgURL.bigShoe) {
             changeBigShoeImage(imgURL.bigShoe)
         }
-    }
+    };
 
   return (
-    <div className={`border-2
-    rounded-xl
+    <div className={`border-2 rounded-xl
     ${bigShoeImg === imgURL.bigShoe ? 
     'border-coral-red' : 'border-transparent'}
-    cursor-pointer max-sm:flex-1
-    `}
+    cursor-pointer max-sm:flex-1`}
     onClick={handleClick}
     >
         <div className='flex justify-center items-center
